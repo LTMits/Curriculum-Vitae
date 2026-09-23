@@ -1,25 +1,59 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad Sulthan Nadhif Pamungkas, S.Kom</title>
-  
-  <!-- Custom CSS -->
+  <title>Curriculum Vitae - Muhammad Iman Ramadhan Primora</title>
+
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- Main Container -->
+
+  <header class="app-header">
+    <div class="brand">
+      <i class="fa-solid fa-file-contract"></i>
+      <span>Curriculum Vitae - Muhammad Iman Ramadhan Primora</span>
+    </div>
+
+    <div class="header-actions">
+
+      <select id="fontSelect" class="btn btn-outline" style="padding:0.4rem 0.6rem;">
+        <option value="'Times New Roman', Times, serif">Font: Times New Roman (Classic)</option>
+        <option value="Arial, sans-serif">Font: Arial (Clean Modern)</option>
+        <option value="'Merriweather', serif">Font: Merriweather (Serif)</option>
+        <option value="'Inter', sans-serif">Font: Inter (Digital ATS)</option>
+        <option value="Calibri, sans-serif">Font: Calibri (Corporate)</option>
+      </select>
+
+      <a href="../cv_html/index.html" class="btn btn-outline" title="Lihat CV Visual Modernsasadfdfrefrefresa">
+        <i class="fa-solid fa-palette"></i> Versi Visual
+      </a>
+
+      <button class="btn btn-primary" onclick="printATSCV()" title="Cetak atau Simpan PDF">
+        <i class="fa-solid fa-print"></i> Cetak / Simpan PDF
+      </button>
+    </div>
+  </header>
+
+
   <main class="app-container" id="appContainer">
+
     <div class="preview-panel">
       <div class="ats-paper" id="atsPaper">
-        <!-- Live ATS CV generated via script.js -->
+
       </div>
     </div>
   </main>
 
-  <!-- Custom JS -->
+
   <script src="script.js"></script>
 </body>
+
 </html>
