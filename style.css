@@ -1,19 +1,4 @@
-/* ATS Resume Builder & Editor Stylesheet - Screenshot Exact Match */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-:root {
-  --editor-bg: #1e293b;
-  --editor-card: #0f172a;
-  --editor-border: #334155;
-  --editor-text: #f8fafc;
-  --editor-muted: #94a3b8;
-  --primary-accent: #38bdf8;
-  --primary-hover: #0284c7;
-  --danger: #ef4444;
-  --paper-bg: #ffffff;
-  --paper-text: #000000;
-  --font-ats: 'Times New Roman', Times, serif;
-}
+/* ATS Resume Document - Simple, Neutral & Clean Minimalist Styling */
 
 * {
   box-sizing: border-box;
@@ -22,115 +7,40 @@
 }
 
 body {
-  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
-  background-color: #0b0f19;
-  color: var(--editor-text);
-  height: 100vh;
-  overflow: hidden;
-}
-
-/* App Header */
-.app-header {
-  height: 56px;
-  background: var(--editor-card);
-  border-bottom: 1px solid var(--editor-border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 1.5rem;
-  z-index: 10;
-}
-
-.brand {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-  font-weight: 700;
-  font-size: 1.1rem;
-}
-
-.brand i {
-  color: var(--primary-accent);
-  font-size: 1.3rem;
-}
-
-.header-actions {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.btn {
-  padding: 0.45rem 0.9rem;
-  border-radius: 6px;
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  border: 1px solid transparent;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.4rem;
-  transition: all 0.2s ease;
-  text-decoration: none;
-}
-
-.btn-primary {
-  background: var(--primary-accent);
-  color: #0f172a;
-}
-.btn-primary:hover {
-  background: var(--primary-hover);
-  color: #ffffff;
-}
-
-.btn-outline {
-  background: transparent;
-  border-color: var(--editor-border);
-  color: var(--editor-text);
-}
-.btn-outline:hover {
-  background: var(--editor-border);
-}
-
-.btn-danger {
-  background: rgba(239, 68, 68, 0.15);
-  color: #fca5a5;
-  border-color: rgba(239, 68, 68, 0.3);
-}
-.btn-danger:hover {
-  background: var(--danger);
-  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: #f1f3f5;
+  color: #111827;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
 /* Main Layout */
 .app-container {
-  display: block;
-  height: calc(100vh - 56px);
-  overflow-y: auto;
-}
-
-/* Center Preview Panel */
-.preview-panel {
-  background: #0b0f19;
-  min-height: 100%;
-  padding: 2.5rem 1rem;
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  min-height: 100vh;
+  padding: 2.5rem 1rem;
 }
 
-/* A4 Paper Document - EXACT SCREENSHOT STYLING MATCH */
+.preview-panel {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+/* A4 ATS Paper Document */
 .ats-paper {
-  background: var(--paper-bg);
-  color: var(--paper-text);
+  background: #ffffff;
+  color: #000000;
   width: 210mm;
   min-height: 297mm;
   padding: 18mm 18mm;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-  font-family: var(--font-ats);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  font-family: 'Times New Roman', Times, serif;
   font-size: 11pt;
   line-height: 1.35;
-  transition: font-family 0.2s ease;
 }
 
 .ats-header {
@@ -144,6 +54,7 @@ body {
   text-transform: uppercase;
   letter-spacing: 0.5px;
   margin-bottom: 3pt;
+  color: #000000;
 }
 
 .ats-contact {
@@ -151,14 +62,16 @@ body {
   color: #000000;
 }
 
-.ats-contact a, .ats-portfolio a {
-  color: #0000ee;
+.ats-contact a, 
+.ats-portfolio a {
+  color: #000000;
   text-decoration: underline;
 }
 
 .ats-portfolio {
   font-size: 10.5pt;
   margin-top: 2pt;
+  color: #000000;
 }
 
 .ats-section {
@@ -173,12 +86,14 @@ body {
   padding-bottom: 1pt;
   margin-bottom: 6pt;
   letter-spacing: 0.5px;
+  color: #000000;
 }
 
 .ats-summary-text {
   font-size: 10.5pt;
   text-align: justify;
   line-height: 1.35;
+  color: #000000;
 }
 
 .ats-entry {
@@ -188,11 +103,13 @@ body {
 .ats-org {
   font-weight: bold;
   font-size: 11pt;
+  color: #000000;
 }
 
 .ats-role {
   font-size: 10.5pt;
   margin-bottom: 3pt;
+  color: #000000;
 }
 
 .ats-bullets {
@@ -205,6 +122,7 @@ body {
   font-size: 10.5pt;
   text-align: justify;
   line-height: 1.3;
+  color: #000000;
 }
 
 /* 2-Column Grid for SKILLS & CERTIFICATES */
@@ -220,23 +138,19 @@ body {
   body {
     background: #ffffff !important;
     color: #000000 !important;
-    overflow: visible !important;
-  }
-
-  .app-header, .editor-panel {
-    display: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
   }
 
   .app-container {
+    padding: 0 !important;
+    min-height: auto !important;
     display: block !important;
-    height: auto !important;
   }
 
   .preview-panel {
-    background: transparent !important;
-    padding: 0 !important;
-    overflow: visible !important;
     display: block !important;
+    padding: 0 !important;
   }
 
   .ats-paper {
@@ -255,16 +169,13 @@ body {
 
 @media (max-width: 1024px) {
   .app-container {
-    height: auto;
-    overflow: auto;
-  }
-  .preview-panel {
-    padding: 1rem;
+    padding: 0.75rem;
   }
   .ats-paper {
     width: 100%;
     min-height: auto;
     padding: 12mm 10mm;
+    box-shadow: none;
   }
   .ats-grid-2col {
     grid-template-columns: 1fr;
